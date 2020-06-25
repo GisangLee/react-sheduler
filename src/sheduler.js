@@ -25,6 +25,7 @@ const schedulerData = [
   },
 ];
 
+const defineTitle = () => "일정";
 function MySheculer() {
   console.log(date);
   return (
@@ -35,7 +36,7 @@ function MySheculer() {
             <WeekView startDayHour={8} endDayHour={24} />
             <Appointments />
             <AppointmentTooltip showCloseButton showOpenButton />
-            <AppointmentForm />
+            <AppointmentForm labelComponent={defineTitle} />
           </Scheduler>
         </Paper>
       </Container>
