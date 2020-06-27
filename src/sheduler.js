@@ -83,10 +83,12 @@ class MySheculer extends React.Component {
   }
 
   changeAddedAppointment(addedAppointment) {
+    console.log("addedAppointments:", addedAppointment);
     this.setState({ addedAppointment });
   }
 
   changeAppointmentChanges(appointmentChanges) {
+    console.log("appointmentChanges:", appointmentChanges);
     this.setState({ appointmentChanges });
   }
 
